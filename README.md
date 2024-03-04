@@ -62,7 +62,7 @@
 </center>
 
 <p align="center">
-   <img src="https://github.com/DestroyerDarkNess/DragonTube/assets/32405118/080e4f6a-906e-4477-b711-7dc0abce9d1c">
+   <img src="https://github.com/DestroyerDarkNess/DragonTube/assets/32405118/930e5c94-2271-4bfa-abfc-0423c781568b">
 </p>
 
 
