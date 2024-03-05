@@ -54,7 +54,7 @@
 | Playlist | ✅ | Supports YouTube playlists. **(Only using *YT Native* Video Player)** |
 | Youtube Browser Widget | ✅ | Allows you to display the YouTube browser in a separate window. |
 | Ram Consumption: | ☢️ | High **(500mb)** **Based on 1GB Ram**  ![](https://geps.dev/progress/50?dangerColor=800000&warningColor=ff9900&successColor=006600) |
-| CPU Consumption:  | ☢️ | High **Based on Intel Code 2 Duo** ![](https://geps.dev/progress/80?dangerColor=006600&warningColor=ff9900&successColor=800000) |
+| CPU Consumption:  | ☢️ | High **Based on Intel Core 2 Duo** ![](https://geps.dev/progress/80?dangerColor=006600&warningColor=ff9900&successColor=800000) |
 | GPU Consumption:  | ☢️ | High **Based on integrated graphics. (Only if you enable hardware acceleration)** ![](https://geps.dev/progress/90?dangerColor=006600&warningColor=ff9900&successColor=800000)  |
 
 <center>
@@ -73,7 +73,7 @@
 | Playlist | ❌ | Supports YouTube playlists. **(Only using *YT Native* Video Player)** |
 | Youtube Browser Widget | ❌ | Allows you to display the YouTube browser in a separate window. |
 | Ram Consumption: | ☢️ | Low **(<100mb)** **Based on 1GB Ram**  ![](https://geps.dev/progress/10?dangerColor=006600&warningColor=ff9900&successColor=800000) |
-| CPU Consumption:  | ☢️ | Low **Based on Intel Code 2 Duo** ![](https://geps.dev/progress/10?dangerColor=006600&warningColor=ff9900&successColor=800000) |
+| CPU Consumption:  | ☢️ | Low **Based on Intel Core 2 Duo** ![](https://geps.dev/progress/10?dangerColor=006600&warningColor=ff9900&successColor=800000) |
 | GPU Consumption:  | ☢️ | Low **Based on integrated graphics. (Only if you enable hardware acceleration)** ![](https://geps.dev/progress/10?dangerColor=006600&warningColor=ff9900&successColor=800000)  |
 
 <center>
