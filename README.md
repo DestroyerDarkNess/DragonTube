@@ -92,10 +92,10 @@
 
 | Name | Description |  ScreenShot  |
 |----------|---------------|---------------|
-| VLC | ☢️ **It must be downloaded from the application notifications.** | ![](https://github.com/DestroyerDarkNess/DragonTube/assets/32405118/dccac654-0993-4584-b08c-8233e66da87b) |
-| WMP | Windows Media Player. ☢️ **(It does not allow you to stretch the video, there will be black borders)** | ![](https://github.com/DestroyerDarkNess/DragonTube/assets/32405118/3a108bc5-ad5f-4fcf-802f-c1eb6ed07c20) |
-| WPF | MediaElement. ☢️ The same as WMP but without Black borders. **(This Video Player does allow you to stretch videos.)** | ![](https://github.com/DestroyerDarkNess/DragonTube/assets/32405118/bfda8304-1d0e-4592-a392-e410cbb52bb1) |
-| YT Embed | Play YouTube Videos using Embedded Videos in an Iframe. ☢️ **(This uses a Video Browser. It consumes the same as YT Browser with Browser.)** ☢️ **(Some Videos are not available in this mode.)** | ![](https://github.com/DestroyerDarkNess/DragonTube/assets/32405118/94f7cd8a-d47d-4213-a207-ed761df593fb) |
+| VLC | ⚠️ **It must be downloaded from the application notifications.** | ![](https://github.com/DestroyerDarkNess/DragonTube/assets/32405118/dccac654-0993-4584-b08c-8233e66da87b) |
+| WMP | Windows Media Player. ⚠️ **(It does not allow you to stretch the video, there will be black borders)** | ![](https://github.com/DestroyerDarkNess/DragonTube/assets/32405118/3a108bc5-ad5f-4fcf-802f-c1eb6ed07c20) |
+| WPF | MediaElement. ⚠️ The same as WMP but without Black borders. **(This Video Player does allow you to stretch videos.)** | ![](https://github.com/DestroyerDarkNess/DragonTube/assets/32405118/bfda8304-1d0e-4592-a392-e410cbb52bb1) |
+| YT Embed | Play YouTube Videos using Embedded Videos in an Iframe. ⚠️ **(This uses a Video Browser. It consumes the same as YT Browser with Browser.)** ⚠️ **(Some Videos are not available in this mode.)** | ![](https://github.com/DestroyerDarkNess/DragonTube/assets/32405118/94f7cd8a-d47d-4213-a207-ed761df593fb) |
 | YT Native | Play YouTube videos in the page's native Player. Supports all videos without any restriction. It also supports YoutubeBrowser Playlist with Navigator. | ![](https://github.com/DestroyerDarkNess/DragonTube/assets/32405118/b2ab2733-bff5-4ad1-92e3-ec110c392337) |
 
 <center>
