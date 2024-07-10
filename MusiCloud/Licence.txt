@@ -1,0 +1,15 @@
+               Disclaimer: Access to YouTube Content
+
+DragonTube is a YouTube client that allows you to access and play video and audio content hosted on YouTube. We want to inform you about some important points related to the use of this application:
+
+1. Application Purpose: DragonTube is designed to give you a more convenient music and video streaming experience, allowing you to search, discover and enjoy content available on YouTube.
+
+2. Access to third-party content: By using DragonTube, you are accessing content provided by YouTube and hosted on its servers. Please note that YouTube is a platform owned by Google and is subject to its terms of service and privacy policies.
+
+3. User Responsibility: It is important that you understand that any content you access through DragonTube is the sole responsibility of the original creators and owners. DragonTube acts solely as a means to access this content and assumes no responsibility for its creation, editing or distribution.
+
+4. Compliance with YouTube Terms of Service: By using DragonTube to access YouTube content, you agree to comply with YouTube's terms of service and policies. We recommend that you review YouTube's terms of service and privacy policies to fully understand your rights and responsibilities as a user.
+
+Please remember that DragonTube is a third-party application and is not affiliated with or endorsed by YouTube or Google. If you have any questions or concerns about content you find through DragonTube, we recommend contacting the YouTube support team directly.
+
+Thank you for using DragonTube. Enjoy your music and video playing experience!

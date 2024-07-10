@@ -1,0 +1,533 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2B9F26B6-9AAE-47EE-A0F3-65C9D0C24C3B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>MusiCloud.My.MyApplication</StartupObject>
+    <RootNamespace>MusiCloud</RootNamespace>
+    <AssemblyName>MusiCloud</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>MusiCloud.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>MusiCloud.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icons8-youtube-play-48.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AngleSharp, Version=1.0.7.0, Culture=neutral, PublicKeyToken=e83494dcdc6d31ea, processorArchitecture=MSIL">
+      <HintPath>..\packages\AngleSharp.1.0.7\lib\net472\AngleSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="CliWrap, Version=3.6.4.0, Culture=neutral, PublicKeyToken=1c4a4fc2d6886e5a, processorArchitecture=MSIL">
+      <HintPath>..\packages\CliWrap.3.6.4\lib\net462\CliWrap.dll</HintPath>
+    </Reference>
+    <Reference Include="EO.Base, Version=24.0.49.0, Culture=neutral, PublicKeyToken=e92353a6bf73fffc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Documents\Visual Studio 2022\Projects\LATAM_AirlinesChecker\Checker\bin\Debug\EO.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="EO.WebBrowser, Version=24.0.49.0, Culture=neutral, PublicKeyToken=e92353a6bf73fffc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Documents\Visual Studio 2022\Projects\LATAM_AirlinesChecker\Checker\bin\Debug\EO.WebBrowser.dll</HintPath>
+    </Reference>
+    <Reference Include="EO.WebEngine, Version=24.0.49.0, Culture=neutral, PublicKeyToken=e92353a6bf73fffc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Documents\Visual Studio 2022\Projects\LATAM_AirlinesChecker\Checker\bin\Debug\EO.WebEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="FFMpegSharp, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FFMpegSharp.2.1.0\lib\net45\FFMpegSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\..\Documents\Visual Studio 2022\Projects\SKY_AirlinesChecker\SKY_AirlinesChecker\bin\Debug\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.8.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="NSoup, Version=0.8.0.0, Culture=neutral, PublicKeyToken=6d44e53f0a65e802, processorArchitecture=MSIL">
+      <HintPath>..\packages\NSoup.0.8.0\lib\net40\NSoup.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="SettingsProviderNet, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SettingsProviderNet.2.1.1\lib\net40\SettingsProviderNet.dll</HintPath>
+    </Reference>
+    <Reference Include="SevenZipExtractor, Version=1.0.16.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SevenZipExtractor.1.0.17\lib\net45\SevenZipExtractor.dll</HintPath>
+    </Reference>
+    <Reference Include="STTextBox">
+      <HintPath>..\..\..\..\Documents\Visual Studio 2022\Projects\TransparentTextBox-main\STTextBox\bin\Debug\STTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.CodePages, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encoding.CodePages.6.0.0\lib\net461\System.Text.Encoding.CodePages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.8.0.0\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.8.0.0\lib\net462\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Presentation" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="TagLibSharp, Version=2.3.0.0, Culture=neutral, PublicKeyToken=db62eba44689b5b0, processorArchitecture=MSIL">
+      <HintPath>..\packages\TagLibSharp.2.3.0\lib\net462\TagLibSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="Vlc.DotNet.Core, Version=3.1.0.0, Culture=neutral, PublicKeyToken=84529da31f4eb963, processorArchitecture=MSIL">
+      <HintPath>..\packages\Vlc.DotNet.Core.3.1.0\lib\net45\Vlc.DotNet.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Vlc.DotNet.Core.Interops, Version=3.1.0.0, Culture=neutral, PublicKeyToken=84529da31f4eb963, processorArchitecture=MSIL">
+      <HintPath>..\packages\Vlc.DotNet.Core.Interops.3.1.0\lib\net45\Vlc.DotNet.Core.Interops.dll</HintPath>
+    </Reference>
+    <Reference Include="Vlc.DotNet.Forms, Version=3.1.0.0, Culture=neutral, PublicKeyToken=84529da31f4eb963, processorArchitecture=MSIL">
+      <HintPath>..\packages\Vlc.DotNet.Forms.3.1.0\lib\net45\Vlc.DotNet.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="YoutubeExplode, Version=6.3.13.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\YoutubeExplode.6.3.13\lib\net461\YoutubeExplode.dll</HintPath>
+    </Reference>
+    <Reference Include="YoutubeExplode.Converter, Version=6.3.13.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\YoutubeExplode.Converter.6.3.13\lib\net461\YoutubeExplode.Converter.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Controls\FlickerFix\IBufferedControl.vb" />
+    <Compile Include="Controls\FlickerFix\PanelFX.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\FlickerFix\Win32FX.vb" />
+    <Compile Include="Controls\GdiPlusLabel.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\LocalMediaEx.Designer.vb">
+      <DependentUpon>LocalMediaEx.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LocalMediaEx.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\LogInTheme.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MusicItem.Designer.vb">
+      <DependentUpon>MusicItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MusicItem.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ProgressNotification.Designer.vb">
+      <DependentUpon>ProgressNotification.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ProgressNotification.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Core\AppSettings.vb" />
+    <Compile Include="Core\AsyncAction.vb" />
+    <Compile Include="Core\CursorChanger.vb" />
+    <Compile Include="Core\DownloadFileAsyncExtended.vb" />
+    <Compile Include="Core\ExceptionManager.vb" />
+    <Compile Include="Core\FileDirSearcher.vb" />
+    <Compile Include="Core\GlobalInstances.vb" />
+    <Compile Include="Core\Helpers.vb" />
+    <Compile Include="Core\HttpVideoServer.vb" />
+    <Compile Include="Core\StringExtensions.vb" />
+    <Compile Include="Core\YoutubeItem.vb" />
+    <Compile Include="Core\YTPlayer.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MainView.Designer.vb">
+      <DependentUpon>MainView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\About.Designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\About.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AdShowPrices.Designer.vb">
+      <DependentUpon>AdShowPrices.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AdShowPrices.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Config.Designer.vb">
+      <DependentUpon>Config.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Config.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DisclaimerForm.Designer.vb">
+      <DependentUpon>DisclaimerForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DisclaimerForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DownloadDialog.Designer.vb">
+      <DependentUpon>DownloadDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DownloadDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DownloadedMedia.Designer.vb">
+      <DependentUpon>DownloadedMedia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DownloadedMedia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\LocalMusic.Designer.vb">
+      <DependentUpon>LocalMusic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LocalMusic.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MusicHub.Designer.vb">
+      <DependentUpon>MusicHub.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MusicHub.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Splash.Designer.vb">
+      <DependentUpon>Splash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Splash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\VLCPlayer.Designer.vb">
+      <DependentUpon>VLCPlayer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\VLCPlayer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\WebDevTools.Designer.vb">
+      <DependentUpon>WebDevTools.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\WebDevTools.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\WebPlayer.Designer.vb">
+      <DependentUpon>WebPlayer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\WebPlayer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\WMPlayer.Designer.vb">
+      <DependentUpon>WMPlayer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\WMPlayer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\WPFPlayer.Designer.vb">
+      <DependentUpon>WPFPlayer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\WPFPlayer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\YoutubeBrowser.Designer.vb">
+      <DependentUpon>YoutubeBrowser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\YoutubeBrowser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\YoutubePlayer.Designer.vb">
+      <DependentUpon>YoutubePlayer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\YoutubePlayer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\LocalMediaEx.resx">
+      <DependentUpon>LocalMediaEx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MusicItem.resx">
+      <DependentUpon>MusicItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ProgressNotification.resx">
+      <DependentUpon>ProgressNotification.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainView.resx">
+      <DependentUpon>MainView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AdShowPrices.resx">
+      <DependentUpon>AdShowPrices.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Config.resx">
+      <DependentUpon>Config.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DisclaimerForm.resx">
+      <DependentUpon>DisclaimerForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DownloadDialog.resx">
+      <DependentUpon>DownloadDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DownloadedMedia.resx">
+      <DependentUpon>DownloadedMedia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LocalMusic.resx">
+      <DependentUpon>LocalMusic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MusicHub.resx">
+      <DependentUpon>MusicHub.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Splash.resx">
+      <DependentUpon>Splash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\VLCPlayer.resx">
+      <DependentUpon>VLCPlayer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\WebDevTools.resx">
+      <DependentUpon>WebDevTools.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\WebPlayer.resx">
+      <DependentUpon>WebPlayer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\WMPlayer.resx">
+      <DependentUpon>WMPlayer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\WPFPlayer.resx">
+      <DependentUpon>WPFPlayer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\YoutubeBrowser.resx">
+      <DependentUpon>YoutubeBrowser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\YoutubePlayer.resx">
+      <DependentUpon>YoutubePlayer.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FFMPEG\bin\presets\ffprobe.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FFMPEG\bin\presets\libvpx-1080p.ffpreset" />
+    <None Include="FFMPEG\bin\presets\libvpx-1080p50_60.ffpreset" />
+    <None Include="FFMPEG\bin\presets\libvpx-360p.ffpreset" />
+    <None Include="FFMPEG\bin\presets\libvpx-720p.ffpreset" />
+    <None Include="FFMPEG\bin\presets\libvpx-720p50_60.ffpreset" />
+    <None Include="FFMPEG\bin\presets\libvpx-ultrafast.ffpreset" />
+    <None Include="FFMPEG\bin\presets\libx264-baseline.ffpreset" />
+    <None Include="FFMPEG\bin\presets\libx264-fast.ffpreset" />
+    <None Include="FFMPEG\bin\presets\libx264-faster.ffpreset" />
+    <None Include="FFMPEG\bin\presets\libx264-faster_firstpass.ffpreset" />
+    <None Include="FFMPEG\bin\presets\libx264-fast_firstpass.ffpreset" />
+    <None Include="FFMPEG\bin\presets\libx264-ipod320.ffpreset" />
+    <None Include="FFMPEG\bin\presets\libx264-ipod640.ffpreset" />
+    <None Include="FFMPEG\bin\presets\libx264-lossless_fast.ffpreset" />
+    <None Include="FFMPEG\bin\presets\libx264-lossless_max.ffpreset" />
+    <None Include="FFMPEG\bin\presets\libx264-lossless_medium.ffpreset" />
+    <None Include="FFMPEG\bin\presets\libx264-lossless_slow.ffpreset" />
+    <None Include="FFMPEG\bin\presets\libx264-lossless_slower.ffpreset" />
+    <None Include="FFMPEG\bin\presets\libx264-lossless_ultrafast.ffpreset" />
+    <None Include="FFMPEG\bin\presets\libx264-main.ffpreset" />
+    <None Include="FFMPEG\bin\presets\libx264-medium.ffpreset" />
+    <None Include="FFMPEG\bin\presets\libx264-medium_firstpass.ffpreset" />
+    <None Include="FFMPEG\bin\presets\libx264-placebo.ffpreset" />
+    <None Include="FFMPEG\bin\presets\libx264-placebo_firstpass.ffpreset" />
+    <None Include="FFMPEG\bin\presets\libx264-slow.ffpreset" />
+    <None Include="FFMPEG\bin\presets\libx264-slower.ffpreset" />
+    <None Include="FFMPEG\bin\presets\libx264-slower_firstpass.ffpreset" />
+    <None Include="FFMPEG\bin\presets\libx264-slow_firstpass.ffpreset" />
+    <None Include="FFMPEG\bin\presets\libx264-superfast.ffpreset" />
+    <None Include="FFMPEG\bin\presets\libx264-superfast_firstpass.ffpreset" />
+    <None Include="FFMPEG\bin\presets\libx264-ultrafast.ffpreset" />
+    <None Include="FFMPEG\bin\presets\libx264-ultrafast_firstpass.ffpreset" />
+    <None Include="FFMPEG\bin\presets\libx264-veryfast.ffpreset" />
+    <None Include="FFMPEG\bin\presets\libx264-veryfast_firstpass.ffpreset" />
+    <None Include="FFMPEG\bin\presets\libx264-veryslow.ffpreset" />
+    <None Include="FFMPEG\bin\presets\libx264-veryslow_firstpass.ffpreset" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FFMPEG\bin\x64\ffmpeg.exe" />
+    <Content Include="FFMPEG\bin\x64\ffprobe.exe" />
+    <Content Include="FFMPEG\bin\x86\ffmpeg.exe" />
+    <Content Include="FFMPEG\bin\x86\ffprobe.exe" />
+    <Content Include="icons8-apple-music-48.ico" />
+    <Content Include="icons8-apple-music-96.ico" />
+    <Content Include="icons8-youtube-play-48.ico" />
+    <None Include="Resources\icons8-preguntas-25.png" />
+    <None Include="Resources\icons8-descargar-16.png" />
+    <None Include="Resources\icons8-error-20.png" />
+    <None Include="Resources\icons8-emoji-de-marca-de-verificación-20.png" />
+    <Content Include="youtube-icon-dragon_500x356_1_50x36_1_15x11.ico" />
+    <None Include="Resources\icons8-bebida-para-llevar-64.png" />
+    <None Include="Resources\icons8-github-30 %281%29.png" />
+    <None Include="Resources\icons8-visual-basic-48.png" />
+    <Content Include="icons8-youtube-play-24.ico" />
+    <Content Include="youtube-icon-dragon.ico" />
+    <None Include="Resources\icons8-instalando-actualizaciones-25.png" />
+    <None Include="Resources\icons8-cita-recurrente-20.png" />
+    <None Include="Resources\icons8-vlc-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="..\packages\SevenZipExtractor.1.0.17\build\SevenZipExtractor.targets" Condition="Exists('..\packages\SevenZipExtractor.1.0.17\build\SevenZipExtractor.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\SevenZipExtractor.1.0.17\build\SevenZipExtractor.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SevenZipExtractor.1.0.17\build\SevenZipExtractor.targets'))" />
+  </Target>
+</Project>
