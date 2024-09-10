@@ -1,1 +1,1 @@
-1.0.7.0|New video players added. <br> A Youtube Browser was added. <br> Many Options Added. <br> Many bugs were fixed.
+1.0.8.0|- Fixed volume slider with YT Native engine  <br> - Fixed startup error.  <br> - Fixed bug in mobile feature.  <br> - Fixed error when logging in.  <br> - Fixed crash when trying to download.  <br> - Added new option (Anti-Aliasing) for YT Native player.  <br> - Updated the user interface in a minimal way.  <br> - New features for mobile mode.
